@@ -1,0 +1,70 @@
+tipos de Tags:
+
+!(usando o emmet para definir a estrutura basica de html no vscode)
+
+<h1>Tag de titulo</h1>
+
+<p>tag de paragrafo</p>
+
+tag para quebra de linha<br>
+
+<strong>tag para deixar o texto em negrito</strong>
+
+<i>tag para dar enfase no texto (italico)</i>
+
+<em>tag semantica para dar enfase no texto (italico)</em>
+
+<sup>tag para colocar o caracter acima da linha</sup>
+
+<sub>tag para colocar um caracter abaixo</sub>
+
+<img src"" alt""> - tag para colocar imagens
+
+<hr> cria uma linha de separação na página
+
+criando uma lista ordenada{
+	<ol type="1" start="1">
+		<li>Item número 1 da lista</li>
+		<li>Item número 2 da lista</li>
+		<li>Item número 3 da lista</li>
+	</ol>
+}
+/*
+ A númeração pode ser mudado se acordo com o type ex: a para ordem alfabetica, i para algarismos romanos.
+
+ O start indica de qual número ou letra deve começar a lista
+*/
+
+criando uma lista desordenada{
+	<ul type="disc">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+}
+/*
+	o type indica o tipo, (disc - bolinha preta fechada) (circle - bolinha vazada) (square - quadrado)
+*/
+
+<a href="tage de criação de link" target="_blank"></a>
+
+Tabelas com varias tags:
+<html>	Define o documento como HTML.
+<head>	Contém metadados sobre o documento (ex.: título, links de estilo).
+<title>	Define o título da página exibido na aba do navegador.
+<body>	Contém todo o conteúdo visível da página (textos, imagens, links, etc.).
+<h1> a <h6>	Títulos e subtítulos, do mais importante (h1) ao menos importante (h6).
+<p>	Define um parágrafo de texto.
+<a>	Cria links para outras páginas ou recursos.
+<img>	Insere imagens no documento.
+<ul>	Cria uma lista não ordenada (com marcadores).
+<ol>	Cria uma lista ordenada (numerada).
+<li>	Define um item dentro de listas (ul ou ol).
+<div>	Define uma divisão ou seção genérica do documento.
+<span>	Marca um trecho de texto inline para aplicar estilo ou identificação.
+<table>	Cria uma tabela.
+<tr>	Linha dentro de uma tabela.
+<td>	Célula de uma tabela.
+<form>	Define um formulário para entrada de dados do usuário.
+<input>	Campo de entrada de dados dentro de um formulário.
+<button>	Cria um botão clicável.

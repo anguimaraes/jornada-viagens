@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica</title>
+</head>
+<body>
+    <header>
+        <h1>Semântica HTML</h1>
+        <p>Todo o conteúdo de cabeçalho do site, sempre
+        ficará dentro da tag <code>&lt;header&gt;</code></p>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Título da minha primeira seção</h2>
+            <p>texto de parágrafo</p>
+            <a href="#">link</a>
+        </section>
+        <section>
+            <article>
+                <h3></h3>
+                <p></p>
+                <img src="" alt=""> 
+            </article>
+        </section>
+        <section>
+            <figure>
+                <img src="img/paisagem-720.jpg" alt="">
+                <figcaption>Bosque verde com uma estrada cheia de folhas secas ao chão</figcaption> 
+            </figure>
+        </section>
+    <footer>
+        <p>Meu contato: <strong>18937-4898</strong></p>
+    </footer>
+    </main>
+</body>
+</html>
+
+//explicação das tags semanticas (leia tudo)
+
+A segunda tag que vamos aprender é a nav, responsável por indicar ao navegador que estamos inserindo uma lista de navegação. Sempre que houver um ou mais links, é importante indicar que uma seção de navegação está começando. A tag nav geralmente está dentro da tag header, pois faz parte do cabeçalho.
+
+Estruturando o conteúdo principal com a tag main
+Podemos optar por usar listas de links com as tags OL ou UL, ou inserir os links diretamente. Por exemplo, podemos criar links com # para que não haja comportamento ao clicar, caso ainda não saibamos qual link inserir.
+
+Visualmente, não há diferença ao usar essas tags semânticas, mas elas ajudam a entender melhor o código e a dar significado aos conteúdos para o navegador, mecanismos de busca e leitores de tela.
+
+A próxima tag é a main, que indica ao navegador que a partir dali começa o conteúdo principal da página. O conteúdo principal deve estar sempre dentro da tag main, evitando incluir header e footer, que geralmente são repetidos entre as páginas do site.
+
+Criando seções de conteúdo com a tag section
+No caso da Alura, o main incluiria todas as seções de conteúdo, como desenvolver a carreira, funcionamento dos cursos, notícias, entre outras. A tag main abrange todo o conteúdo principal.
+
+Após o main, temos as sections, que representam seções específicas de conteúdo dentro do main.
+
+A tag section é utilizada para indicar ao navegador o início de uma seção de conteúdo. Se o site possuir apenas uma seção de conteúdo, ele terá apenas uma section. Em sites como o da Alura, que possuem diversos tipos de conteúdo, haverá várias tags section. Para utilizá-la, criamos a tag section e, por boa prática, incluímos um título de algum nível dentro dela. Supondo que já utilizamos um título H1 no nosso header para escrever "semântica HTML", e considerando que podemos ter apenas um H1 por página, dentro das nossas sections, por boa prática, sempre haverá um título, então começamos a usar o H2. Assim, H2 será o título da primeira seção, e assim por diante. Dentro da section, podemos ter um parágrafo, um link ou uma imagem, dependendo do conteúdo que desejamos incluir. Todo conteúdo relacionado ao mesmo tema deve estar dentro de uma mesma section. Ao mudar de tema na página, criamos outra section, geralmente com um H2, parágrafo, link, ou o que for necessário.
+
+Explorando tags sem valor semântico e suas alternativas
+Existem tags sem conteúdo semântico, como B e I, que deixam o texto em negrito e itálico, respectivamente. As tags mais indicadas são strong e em, para ênfase e negrito. A tag div é semelhante à section, mas não é semântica. Ela indica uma divisão genérica e é usada para estilização. Por exemplo, se quisermos posicionar elementos de forma específica, podemos envolver o conteúdo em divs. Aprenderemos mais sobre isso ao estudar CSS.
+
+A tag span é usada para estilizar partes do texto. Embora não mude visualmente, é útil para aplicar estilos específicos. No entanto, para negrito, a tag strong é mais apropriada. Devemos evitar tags sem valor semântico, usando-as apenas em último caso.
+
+Introduzindo as tags article e figure
+Duas tags pouco usadas, mas importantes, são article e figure. A tag article é utilizada em blogs e fóruns para indicar artigos. Dentro de um article, podemos ter uma hierarquia semelhante à de uma section, com títulos, parágrafos e imagens. A tag figure é usada para imagens, permitindo adicionar significado com a tag figcaption, que descreve a imagem. É importante incluir o atributo alt para leitores de tela e para casos em que a imagem não carrega.
+
+Para imagens, podemos usar a tag figure para adicionar uma legenda, e figcaption serve para ja colocar uma legenda formatado em baixo da imagem, essa legenda fica visivel ao usuário
